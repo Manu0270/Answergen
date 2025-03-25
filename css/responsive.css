@@ -1,0 +1,496 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    .header-container {
+        justify-content: flex-start;
+        background: #fff;
+        padding: 10px 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+    }
+
+    .logo {
+        position: static;
+        margin-right: auto;
+    }
+
+    .logo img {
+        padding: 5px 0px;
+        margin-top: 0;
+        background: #fff;
+        width: 180px;
+        height: 30px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+        text-align: left;
+    }
+
+    nav ul li a {
+        color: #000 !important;
+        font-size: 14px;
+        font-weight: 400 !important;
+    }
+
+    nav ul li a:hover {
+        color: var(--site-orange) !important;
+    }
+
+    nav ul li a.active {
+        color: var(--site-orange) !important;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: #000;
+        margin: 4px 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Dropdown Responsive Adjustments */
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 22px;
+        margin: 35px 0 10px;
+        font-weight: 600;
+    }
+
+    .hero-text p {
+        font-weight: 400;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .services-container, .info-container {
+        flex-direction: column;
+    }
+
+    .service-item, .info-item {
+        margin: 15px 0;
+    }
+
+    /* Slider Responsive Adjustments */
+    .slider {
+        overflow-x: hidden; /* Enable horizontal scrolling on mobile */
+    }
+
+    .slides {
+        flex-wrap: nowrap;
+    }
+
+    .slide {
+        min-width: 120px; /* Smaller width for mobile */
+        margin: 0 5px;
+    }
+
+    .prev-btn, .next-btn {
+        display: none; /* Hide buttons on mobile, use native scrolling */
+    }
+
+    .sharepoint-container, .info-container {
+        flex-direction: column;
+    }
+
+    .sharepoint-item, .info-item {
+        margin: 15px 0;
+    }
+
+    .sharepoint-image{
+        display: none;
+    }
+
+    .sharepoint-image1{
+        text-align: center;
+    }
+
+    .sharepoint-online-container, .info-container {
+        flex-direction: column;
+    }
+
+    .sharepoint-online-item, .info-item {
+        margin: 15px 0;
+    }
+
+    .sharepoint-online-image {
+        text-align: center;
+    }
+
+    .sharepoint-use-container, .info-container {
+        flex-direction: column;
+    }
+
+    .sharepoint-use-item, .info-item {
+        margin: 15px 0;
+    }
+
+    .sharepoint-use-image1 {
+        text-align: center;
+    }
+
+    .sharepoint-use-image {
+        display: none;
+    }
+
+    .sharepoint-text-container, .info-container {
+        flex-direction: column;
+    }
+
+    .sharepoint-text-item, .info-item {
+        margin: 15px 0;
+    }
+
+    .security-container, .info-container {
+        flex-direction: column;
+    }
+
+    
+    .security h2 {
+        font-size: 20px;
+    }
+
+    .sharepoint-use h2 {
+        font-size: 20px;
+    }
+
+    .security-item, .info-item {
+        margin: 15px 0;
+    }
+
+    .pricing-section h1 {
+        font-size: 20px;
+    }
+
+    .info-item h2 {
+        font-size: 20px;
+    }
+
+    .sharepoint-online h2 {
+        font-size: 20px;
+    }
+
+    
+    .contact-us h2 {
+        font-size: 20px;
+    }
+
+    .security-image2 {
+        display: none;
+    }
+
+    .security-image1 {
+        text-align: center;
+    }
+
+    .business {
+        width: 100%;
+    }
+
+    /* Footer Responsive Adjustments */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+/* [Previous responsive CSS content remains the same until Clients Section] */
+
+/* Clients Section Responsive Adjustments */
+@media (max-width: 768px) {
+    .clients-container {
+        padding: 0 10px;
+    }
+
+    .clients-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+        gap: 15px;
+    }
+
+    .client-item {
+        padding: 10px;
+    }
+
+    .client-item p {
+        font-size: 11px;
+    }
+}
+
+/* [Rest of the responsive CSS content remains the same] */
+
+/* [Previous responsive CSS content remains the same until Contact Section] */
+
+/* [Previous responsive CSS content remains the same until Contact Section] */
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px; /* Maintain gap in mobile mode */
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-row input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* [Rest of the responsive CSS content remains the same] */
+
+/* [Rest of the responsive CSS content remains the same] */
+
+@media (min-width: 769px){
+    .sharepoint-image1{
+        display: none;
+    }
+
+    .sharepoint-use-image1 {
+        display: none;
+    }
+
+    .security-image1 {
+        display: none;
+    }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .pricing-container {
+        gap: 30px; /* Reduce the gap between cards */
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    .pricing-card {
+        width: 80%; /* Make cards take up more width on smaller screens */
+        max-width: 400px; /* Cap the width for readability */
+    }
+
+    .pricing-card h2 {
+        font-size: 20px; /* Adjust header size */
+    }
+
+    .pricing-card ul li {
+        font-size: 13px; /* Slightly smaller text for list items */
+        padding: 8px 14px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-text {
+        font-size: 13px; /* Adjust footer text size */
+        padding: 0 20px; /* Add padding to prevent text from touching edges */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .pricing-container {
+        gap: 20px; /* Further reduce the gap */
+    }
+
+    .pricing-card {
+        width: 90%; /* Make cards take up almost the full width */
+        max-width: 350px; /* Ensure it doesn't get too wide */
+    }
+
+    .pricing-card h2 {
+        font-size: 18px; /* Smaller header */
+    }
+
+    .pricing-card ul li {
+        font-size: 12px; /* Smaller text for list items */
+        padding: 6px 12px; /* Further adjust padding */
+    }
+
+    .footer-text {
+        font-size: 12px; /* Smaller footer text */
+        padding: 0 15px; /* Adjust padding */
+    }
+}
+
+
+/* Responsive adjustments for Scroll Up Button */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .scroll-up {
+        width: 35px; /* Slightly smaller on tablets */
+        height: 35px;
+        font-size: 18px; /* Smaller icon */
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .scroll-up {
+        width: 30px; /* Even smaller on mobile */
+        height: 30px;
+        font-size: 16px; /* Smaller icon */
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 1170px) {
+    .timeline::before {
+        left: 55px;
+        transform: none;
+    }
+
+    .timeline-item {
+        margin: 20px 0;
+    }
+
+    .timeline-item::before {
+        left: 20px;
+        transform: none;
+        width: 35px;
+        height: 35px;
+    }
+
+    .timeline-item::after {
+        left: 28px;
+        top: 28px;
+        transform: none;
+        font-size: 15px;
+    }
+
+    .timeline-content {
+        width: 60%;
+        margin-left: 60px;
+        margin-right: 0;
+    }
+
+    .timeline-item.left .timeline-content,
+    .timeline-item.right .timeline-content {
+        margin-left: 90px;
+        margin-right: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-item {
+        flex: 1 1 45%;
+    }
+
+    .feature-item i {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 1170px) {
+    .chronology::before {
+        left: 55px;
+        transform: none;
+    }
+
+    .chronology-item {
+        margin: 20px 0;
+    }
+
+    .chronology-item::before {
+        left: 27px;
+        transform: none;
+        width: 20px;
+        height: 20px;
+    }
+
+    .chronology-content {
+        width: 60%;
+        margin-left: 60px;
+        margin-right: 0;
+    }
+
+    .chronology-item.left .chronology-content,
+    .chronology-item.right .chronology-content {
+        margin-left: 90px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .industry-nav {
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: space-around; /* Space buttons evenly */
+    }
+
+    .nav-item {
+        width: 40%; /* Adjust width to fit 2 buttons per row */
+        margin: 10px 2%; /* Adjust margins for spacing */
+        height: 0%;
+    }
+}
