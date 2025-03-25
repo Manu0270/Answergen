@@ -1,4 +1,97 @@
 /* Responsive Design */
+@media (max-width: 933px) {
+    header {
+        padding: 0;
+    }
+
+    .header-container {
+        justify-content: flex-start;
+        background: #fff;
+        padding: 10px 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+    }
+
+    .logo {
+        position: static;
+        margin-right: auto;
+    }
+
+    .logo img {
+        padding: 5px 0px;
+        margin-top: 0;
+        background: #fff;
+        width: 180px;
+        height: 30px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+        text-align: left;
+    }
+
+    nav ul li a {
+        color: #000 !important;
+        font-size: 14px;
+        font-weight: 400 !important;
+    }
+
+    nav ul li a:hover {
+        color: var(--site-orange) !important;
+    }
+
+    nav ul li a.active {
+        color: var(--site-orange) !important;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: #000;
+        margin: 4px 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Dropdown Responsive Adjustments */
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 0;
@@ -449,7 +542,11 @@
 
 @media (max-width: 480px) {
     .feature-item {
-        flex: 1 1 100%;
+        flex: 1 1 45%;
+    }
+
+    .feature-item {
+        min-width: 189px;
     }
 }
 
