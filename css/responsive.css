@@ -155,7 +155,6 @@
 
     .sharepoint-online-container, .info-container {
         flex-direction: column;
-        align-items: start;
     }
 
     .sharepoint-online-item, .info-item {
